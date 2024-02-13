@@ -1,5 +1,104 @@
-/*COLORS:
-Header background - #FFDBAA
-button - #805215
-Header Text - #553100
-Main background - #D4A76A*/
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* 100% of the viewport height */
+}
+
+.top-box {
+    flex: 1; /* Takes up 30% of the top screen */
+    background-color: #FFDBAA; /* Header background color */
+}
+
+.bottom-box {
+    flex: 2; /* Takes up the rest of the screen */
+    background-color: #D4A76A; /* Main background color */
+}
+
+.upper-page-holder {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.small-buttons {
+    display: flex;
+}
+
+.small-buttons button {
+    margin-right: 10px; /* Adjust the spacing as needed */
+    background-color: #805215; /* Button color */
+    color: #FFF; /* Text color for buttons */
+}
+
+.middle-page-holder {
+    display: flex;
+    flex-direction: column;
+}
+
+.middle-boxes {
+    display: flex;
+}
+
+.box {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    border: 1px solid #ccc;
+    margin: 10px;
+    height: 200px;
+    padding: 10px;
+    background-color: #FFF; /* White background color for boxes */
+}
+
+/* Update box name color to black */
+.box h3 {
+    color: #000;
+}
+
+/* Update button color to match the other buttons */
+.box button {
+    background-color: #805215;
+    color: #FFF; /* Text color for buttons */
+}
+
+#bottom-box {
+    flex: 1; /* Takes up 1/3 of the bottom of the page */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    border: 1px solid #ccc;
+    margin: 10px;
+    height: 200px;
+    padding: 10px;
+    background-color: #FFF; /* White background color for the bottom box */
+}
+
+/* Update bottom box name color to black */
+#bottom-box h3 {
+    color: #000;
+}
+
+/* Update button color to match the other buttons */
+#bottom-box button {
+    background-color: #805215;
+    color: #FFF; /* Text color for buttons */
+}
+
+button {
+    padding: 10px;
+    font-size: 16px;
+}
+
+h2 {
+    color: #553100; /* Header Text color */
+}
